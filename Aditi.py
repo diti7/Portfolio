@@ -64,8 +64,7 @@ if page == "home":
 
     #Portrait...
     with col3:
-        #st.image("images/portrait.jpg", width = 265)
-        st.image("https://github.com/diti7/Portfolio/blob/main/images/Portrait.jpg", width=265)
+        st.image("images/portrait.jpg", width = 265)
 
 
     #Tech Stack...

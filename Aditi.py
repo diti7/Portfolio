@@ -64,7 +64,9 @@ if page == "home":
 
     #Portrait...
     with col3:
-        st.image("images/portrait.jpg", width = 265)
+        #st.image("images/portrait.jpg", width = 265)
+        st.image("https://raw.githubusercontent.com/diti7/Portfolio/main/images/portrait.jpg", width=265)
+
 
     #Tech Stack...
     st.markdown(

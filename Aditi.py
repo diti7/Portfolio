@@ -41,7 +41,8 @@ if page == "home":
         """)
         st.write("Let's connect & collaborate!")
         st.write("📍Location: Toronto, Canada")
-        st.write("👩‍🎓Studying: Computer Science at York University")
+        st.write("👩‍💻Co-op: Application Support Analyst at FGF Brands")
+        st.write("👩‍🎓Education: Computer Science at York University")
         #st.write("🎨Interests: Hackathons, Data Science, UX/UI Designs")
         st.write("👀Fun Fact: I'm a self-taught artist.")
 
@@ -187,6 +188,7 @@ elif page == "resume":
     st.write("")
 
     st.image("images/resume.jpg", use_column_width=True)
+
 
 
 

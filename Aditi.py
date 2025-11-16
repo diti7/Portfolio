@@ -184,14 +184,18 @@ elif page == "projects":
 # --------------------------------------------------------------------------------------------------------- 
 elif page == "resume":
     st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Resume / Experience</h2>", unsafe_allow_html=True)
-    st.write("Click below to download my resume.")
+    st.write("")
 
-    with open("Aditi_Patel_Resume.pdf", "rb") as pdf_file:
-        st.download_button(
-            label="📄 Download Resume",
-            data=pdf_file,
-            file_name="Aditi_Patel_Resume.pdf",
-            mime="application/pdf"
-        )
+    st.image("resume.png", use_column_width=True)
+
+    st.write("---")
+    st.download_button(
+        label="📄 Download Resume (PDF)",
+        data=open("Aditi_Patel_Resume.pdf", "rb").read(),
+        file_name="Aditi_Patel_Resume.pdf",
+        mime="application/pdf"
+    )
+
+
 
 

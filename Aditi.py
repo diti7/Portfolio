@@ -10,6 +10,8 @@ st.sidebar.title("Navigation")
 pages = {
     "🏠Home": "home",
     "🎯Projects": "projects"
+    "📄Resume": "resume"
+
 }
 
 # Nagivation labels
@@ -36,7 +38,7 @@ if page == "home":
     #About...
     with col1:
         st.write("""
-            I’m a second-year Computer Science student at York University - Lassonde School of Engineering, passionate about software development, data analysis, and UX/UI design. I enjoy participating in hackathons and making projects that challenge my creativity and open my learning pathways. I'm always seeking opportunities to work on different projects that push my skills to foster new learning experiences.
+            I’m a third-year Computer Science student at York University - Lassonde School of Engineering, passionate about software development, data analysis, and UX/UI design. I enjoy participating in hackathons and making projects that challenge my creativity and open my learning pathways. I'm always seeking opportunities to work on different projects that push my skills to foster new learning experiences.
         """)
         st.write("Let's connect & collaborate!")
         st.write("📍Location: Toronto, Canada")
@@ -177,3 +179,19 @@ elif page == "projects":
                 </div>
                 """, unsafe_allow_html=True
             )
+            
+# ---------------------------------------------------------------------------------------------------------
+# ------------------------------------------- Resume Page -----------------------------------------------
+# --------------------------------------------------------------------------------------------------------- 
+elif page == "resume":
+    st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Resume / Experience</h2>", unsafe_allow_html=True)
+    st.write("Click below to download my resume.")
+
+    with open("Aditi_Patel_Resume.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="📄 Download Resume",
+            data=pdf_file,
+            file_name="Aditi_Patel_Resume.pdf",
+            mime="application/pdf"
+        )
+

@@ -186,7 +186,7 @@ elif page == "resume":
     st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Resume</h2>", unsafe_allow_html=True)
     st.write("")
 
-    st.image("resume.png", use_column_width=True)
+    st.image("resume.jpg", use_column_width=True)
 
     st.write("---")
     st.download_button(
@@ -195,6 +195,7 @@ elif page == "resume":
         file_name="Aditi_Patel_Resume.pdf",
         mime="application/pdf"
     )
+
 
 
 

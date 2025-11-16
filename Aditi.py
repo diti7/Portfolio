@@ -9,9 +9,8 @@ st.sidebar.title("Navigation")
 # Define the pages
 pages = {
     "🏠Home": "home",
-    "🎯Projects": "projects"
+    "🎯Projects": "projects",
     "📄Resume": "resume"
-
 }
 
 # Nagivation labels
@@ -194,4 +193,5 @@ elif page == "resume":
             file_name="Aditi_Patel_Resume.pdf",
             mime="application/pdf"
         )
+
 

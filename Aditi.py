@@ -10,7 +10,8 @@ st.sidebar.title("Navigation")
 pages = {
     "🏠Home": "home",
     "🎯Projects": "projects",
-    "📄Resume": "resume"
+    "📄Resume": "resume",
+    "👩‍💻Career": "career"
 }
 
 # Nagivation labels
@@ -190,8 +191,40 @@ elif page == "resume":
     st.image("images/resume.jpg", use_column_width=True)
 
 
+# ---------------------------------------------------------------------------------------------------------
+# ------------------------------------------- Resume Page -----------------------------------------------
+# ---------------------------------------------------------------------------------------------------------
+elif page == "career":
+    st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Career and Goals</h2>", unsafe_allow_html=True)
+    st.write("""
+- Short Term (Co-op Term):
+  - Strengthen hands-on development skills in Python, JavaScript & React.
+  - Work on real-world mobile + cloud based systems.
+  - Improve debugging, testing and system design competency.
+- Mid Term (1–2 years):
+  - Contribute to scalable backend or ML-based projects in industry.
+  - Publish independent or academic project related to Data or Astronomy.
+- Long Term (5+ years):
+  - Become a software developer with strong research-driven thinking.
+  - Work at a place where technology + impact intersect.
+""")
 
+st.divider()
 
+st.header("Work Portfolio & Contributions")
+st.write("""
+This section reflects my professional growth throughout my co-op term.
+It includes tasks accomplished, technical milestones, challenges and how I overcame them.
+""")
+
+with st.expander("📌 Current Portfolio Summary"):
+    st.write("""
+    - Tools used during work term
+    - New frameworks I am learning
+    - Key tasks completed weekly/monthly
+    """)
+
+st.info("⭐ More content will be updated continuously during co-op.")
 
 
 

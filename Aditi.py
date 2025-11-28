@@ -104,7 +104,7 @@ if page == "home":
             'Javascript', 'React', 'Git', 'GitHub', 'VS Code', 'Linux', 'Figma'
         ]
     }"""
-     skill_col_size = 5
+    skill_col_size = 5
     tech = {
         st.header("🛠 Tech Stack (Organized)")
 
@@ -242,6 +242,7 @@ with st.expander("📌 Current Portfolio Summary"):
     """)
 
 st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

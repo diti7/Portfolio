@@ -165,31 +165,14 @@ elif page == "projects":
     ]
 
     #Project Container...
-    #Project Container...
-    for proj in projects:
-        with st.container():
-            st.markdown(
-                f"""
-                <div style ='border: 1px solid #ddd; border-radius: 15px; padding: 20px; margin-bottom: 25px; position: relative;'>
-    
-                    <!-- Title clickable -->
-                    <h3 style='margin-bottom: 5px;'>
-                        <a href="{proj['github']}" target="_blank" style="text-decoration:none; color:white;">
-                            {proj['title']}
-                        </a>
-                    </h3>
-    
-                    <!-- GitHub icon top-right -->
-                    <a href="{proj['github']}" target="_blank" style="position: absolute; top: 20px; right: 20px;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="25" style="opacity:0.85;">
-                    </a>
-    
-                    <h5 style='color: #57CC99; margin-top: 0;'>{proj['stack']}</h5>
-                    <p>{proj['desc']}</p>
-    
-                </div>
-                """,
-                unsafe_allow_html=True
+    for proj in projects: 
+        with st.container(): 
+            #container, title, stack, desc... 
+            st.markdown( f""" <div style ='border: 1px solid #ddd; border-radius: 15px; padding: 20px; margin-bottom: 25px; position: relative;'> 
+            <a href = "{proj['github']}" target = "_blank" style="position: absolute; top: 20px; right: 20px;"> 
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width = "25"> </a> 
+            <h3 style = 'margin-bottom: 5px;'>{proj['title']}</h3> <h5 style = 'color: #57CC99; margin-top: 0;'>
+            {proj['stack']}</h5> <p>{proj['desc']}</p> </div> """, unsafe_allow_html=True
             )
 
             

@@ -192,32 +192,33 @@ elif page == "resume":
 elif page == "goals":
     st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Career Goals</h2>", unsafe_allow_html=True)
     st.write("""
-- Short Term Goals (Co-op Term):
-  - Strengthen hands-on development skills in Python, Data Analysis, and development.
-  - Work on real-world mobile + cloud-based systems.
-  - Improve debugging, testing, and system design competency.
-- Long Term Goals (5+ years):
-  - Contribute to scalable backend or data-based projects in the industry.
-  - Become an analyst with strong research-driven thinking.
-  - Work at a place where technology and impact intersect.
-""")
-
-st.divider()
-
-st.header("Work Portfolio & Contributions")
-st.write("""
-This section reflects my professional growth throughout my co-op term.
-It includes tasks accomplished, technical milestones, challenges, and how I overcame them.
-""")
-
-with st.expander("📌 Current Portfolio Summary"):
-    st.write("""
-    - Tools used during work term
-    - New frameworks I am learning
-    - Key tasks completed weekly/monthly
+    - Short Term Goals (Co-op Term):
+      - Strengthen hands-on development skills in Python, Data Analysis, and development.
+      - Work on real-world mobile + cloud-based systems.
+      - Improve debugging, testing, and system design competency.
+    - Long Term Goals (5+ years):
+      - Contribute to scalable backend or data-based projects in the industry.
+      - Become an analyst with strong research-driven thinking.
+      - Work at a place where technology and impact intersect.
     """)
+    
+    st.divider()
+    
+    st.header("Work Portfolio & Contributions")
+    st.write("""
+    This section reflects my professional growth throughout my co-op term.
+    It includes tasks accomplished, technical milestones, challenges, and how I overcame them.
+    """)
+    
+    with st.expander("📌 Current Portfolio Summary"):
+        st.write("""
+        - Tools used during work term
+        - New frameworks I am learning
+        - Key tasks completed weekly/monthly
+        """)
+    
+    st.info("⭐ More content will be updated continuously during co-op.")
 
-st.info("⭐ More content will be updated continuously during co-op.")
 
 
 

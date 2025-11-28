@@ -95,7 +95,6 @@ if page == "home":
     )
 
     #stack containers (skills)...
-    """
     skill_col_size = 5
     tech = {
         'skills': [
@@ -104,36 +103,6 @@ if page == "home":
             'Javascript', 'React', 'Git', 'GitHub', 'VS Code', 'Linux', 'Figma'
         ]
     }
-    """
-    skill_col_size = 5
-
-    st.header("🛠 Tech Stack")
-    
-    # New organized skills display
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        st.subheader("Frontend")
-        st.write("React • Tailwind • JavaScript")
-    
-    with col2:
-        st.subheader("Backend & Core")
-        st.write("Python • Java • C • Linux")
-    
-    with col3:
-        st.subheader("Data & Tools")
-        st.write("SQL • Pandas • Streamlit • Git")
-
-# ---------------- old skills button grid retained below ----------------
-
-    tech = {
-        'skills': [
-            'Python', 'Java', 'MySQL', 'PostgreSQL', 'Pandas', 'Matplotlib',
-            'NumPy', 'Scikit-Learn', 'Seaborn', 'Streamlit', 'HTML', 'CSS',
-            'Javascript', 'React', 'Git', 'GitHub', 'VS Code', 'Linux', 'Figma'
-        ]
-    }
-
 
     def skill_tab():
         rows, cols = len(tech['skills']) // skill_col_size, skill_col_size
@@ -254,6 +223,7 @@ with st.expander("📌 Current Portfolio Summary"):
     """)
 
 st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

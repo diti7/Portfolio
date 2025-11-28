@@ -106,7 +106,7 @@ if page == "home":
     }"""
     skill_col_size = 5
     tech = {
-        , st.header("🛠 Tech Stack")
+        st.header("🛠 Tech Stack")
         col1, col2, col3 = st.columns(3)
 
     with col1:
@@ -241,6 +241,7 @@ with st.expander("📌 Current Portfolio Summary"):
     """)
 
 st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

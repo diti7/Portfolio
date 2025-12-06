@@ -122,7 +122,26 @@ if page == "home":
 
     with st.spinner(text ="Loading section..."):
         skill_tab()
-
+    
+    st.write("")
+    st.write("")
+    
+    #--------------- Video Section ---------------
+    st.markdown(
+        """
+        <h2 style="border-bottom: 2px solid #57CC99; padding-bottom: 10px;">Why me?</h2>
+        """, unsafe_allow_html=True
+    )
+    
+    try:
+        video_file = open('why me.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+    except:
+        st.video("https://github.com/diti7/Portfolio/raw/main/introduction_video.mp4")
+    
+    #Caption...
+    st.caption("✨ Introduction video - Get to know me better!")
  
 
 # ---------------------------------------------------------------------------------------------------------
@@ -183,19 +202,19 @@ elif page == "resume":
     st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Resume</h2>", unsafe_allow_html=True)
     st.write("")
 
-    st.image("images/resume.jpg", use_column_width=True)
+    st.image("images/resume.jpg", use_container_width=True)
 
 
 # ---------------------------------------------------------------------------------------------------------
-# ------------------------------------------- Resume Page -----------------------------------------------
+# ------------------------------------------- Goals Page -----------------------------------------------
 # ---------------------------------------------------------------------------------------------------------
 elif page == "goals":
     st.markdown("<h2 style='border-bottom: 2px solid #57CC99;'>Career Goals</h2>", unsafe_allow_html=True)
     st.write("""
     - Short Term Goals (Co-op Term):
+      - Learn about real-world mobile + cloud-based systems.
+      - Learn about exisiting technologies and systems used at my co-op.
       - Strengthen hands-on development skills in Python, Data Analysis, and development.
-      - Work on real-world mobile + cloud-based systems.
-      - Improve debugging, testing, and system design competency.
     - Long Term Goals (5+ years):
       - Contribute to scalable backend or data-based projects in the industry.
       - Become an analyst with strong research-driven thinking.
@@ -206,16 +225,15 @@ elif page == "goals":
     
     st.header("Work Portfolio & Contributions")
     st.write("""
-    This section reflects my professional growth throughout my co-op term.
-    It includes tasks accomplished, technical milestones, challenges, and how I overcame them.
+    This section will reflect my professional growth throughout my co-op term. Stay tuned!
     """)
     
-    with st.expander("📌 Current Portfolio Summary"):
-        st.write("""
-        - Tools used during work term
-        - New frameworks I am learning
-        - Key tasks completed weekly/monthly
-        """)
+    #with st.expander("📌 Current Portfolio Summary"):
+        #st.write("""
+        #- Tools used during work term
+        #- New frameworks I am learning
+        #- Key tasks completed weekly/monthly
+        #""")
     
     st.info("⭐ More content will be updated continuously during co-op.")
 

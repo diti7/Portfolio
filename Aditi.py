@@ -131,6 +131,19 @@ if page == "home":
     st.video("https://youtu.be/JknEPc8DuGY")
     #Caption...
     st.caption("✨ Introduction video - Get to know me better!")
+    
+    st.markdown("""
+    
+    My projects show how I turn classroom learning into real, usable solutions which isn't just code, but **insight, design, and impact**.
+    
+    In my **Hospital Data Analysis web app**, I worked with real-world data to clean, analyze, and visualize information in a way that supports decision-making. This project pushed me to think beyond *“does it work?”* and focus on *“does it make sense to the user?”* 🧠
+    
+    With my **HoloMath project**, I learned how data quality, assumptions, and context directly affect outcomes. It strengthened my analytical thinking and taught me to question results instead of accepting them at face value 📊.
+    
+    Building this portfolio using **Streamlit** allowed me to bring everything together (development, data, and communication) into one cohesive platform. The focuses mentioned in my video highlight my growth over time and reflect how my resume represents not just what I’ve done, but **how I’ve learned and improved**.
+    
+    I’m excited to continue growing through my co-op experiences where I can apply these skills, learn from real-world challenges, and create tech that’s both thoughtful and effective ✨
+    """)
  
 
 # ---------------------------------------------------------------------------------------------------------
@@ -225,6 +238,7 @@ elif page == "goals":
         #""")
     
     st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

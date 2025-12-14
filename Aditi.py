@@ -128,13 +128,7 @@ if page == "home":
     
     #--------------- Video Section ---------------
     st.subheader("Why Me")
-    st.markdown(
-        """
-        <iframe width="100%" height="400"
-        src="https://youtu.be/JknEPc8DuGY"
-        frameborder="0"
-        allowfullscreen></iframe>
-        """, unsafe_allow_html=True)
+    st.video("https://youtu.be/JknEPc8DuGY")
     #Caption...
     st.caption("✨ Introduction video - Get to know me better!")
  
@@ -231,6 +225,7 @@ elif page == "goals":
         #""")
     
     st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

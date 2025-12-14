@@ -127,7 +127,11 @@ if page == "home":
     st.write("")
     
     #--------------- Video Section ---------------
-    st.subheader("Why Me")
+    st.markdown(
+        """
+        <h2 style = "border-bottom: 2px solid #57CC99; padding-bottom: 10px;">Why Me? 🤔</h2>
+        """, unsafe_allow_html=True
+    )
     st.video("https://youtu.be/JknEPc8DuGY")
     #Caption...
     st.caption("✨ Introduction video - Get to know me better!")
@@ -238,6 +242,7 @@ elif page == "goals":
         #""")
     
     st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 

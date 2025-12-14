@@ -127,19 +127,8 @@ if page == "home":
     st.write("")
     
     #--------------- Video Section ---------------
-    st.markdown(
-        """
-        <h2 style="border-bottom: 2px solid #57CC99; padding-bottom: 10px;">Why me?</h2>
-        """, unsafe_allow_html=True
-    )
-    
-    try:
-        video_file = open('why me.mp4', 'rb')
-        video_bytes = video_file.read()
-        st.video(video_bytes)
-    except:
-        st.video("https://github.com/diti7/Portfolio/raw/main/introduction_video.mp4")
-    
+    st.subheader("Why Me")
+    st.video("https://youtu.be/JknEPc8DuGY")
     #Caption...
     st.caption("✨ Introduction video - Get to know me better!")
  
@@ -236,6 +225,7 @@ elif page == "goals":
         #""")
     
     st.info("⭐ More content will be updated continuously during co-op.")
+
 
 
 
